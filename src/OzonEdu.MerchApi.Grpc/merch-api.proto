@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+option csharp_namespace = "OzonEdu.MerchApi.Grpc";
+package MerchApi;
+
+import "google/protobuf/empty.proto";
+
+service MerchApiGrpc {
+  rpc GiveMerch (GiveMerchRequest) returns (google.protobuf.Empty);
+  rpc CheckMerchStatus (GetMerchStatusRequest) returns (CheckMerchStatusResponse);
+}
+
+message GiveMerchRequest {
+  int64 employee_id = 1;
+}
+
+message GetMerchStatusRequest {
+  int64 employee_id = 1;
+}
+
+message CheckMerchStatusResponse {
+  bool status = 1;
+}
