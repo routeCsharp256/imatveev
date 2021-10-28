@@ -5,8 +5,4 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\OzonEdu.MerchApi.HttpModels\OzonEdu.MerchApi.HttpModels.csproj" />
-    </ItemGroup>
-
 </Project>

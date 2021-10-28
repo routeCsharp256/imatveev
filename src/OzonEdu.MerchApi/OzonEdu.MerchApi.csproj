@@ -7,29 +7,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\OzonEdu.MerchApi.Grpc\OzonEdu.MerchApi.Grpc.csproj" />
-      <ProjectReference Include="..\OzonEdu.MerchApi.HttpModels\OzonEdu.MerchApi.HttpModels.csproj" />
       <ProjectReference Include="..\OzonEdu.MerchApi.HttpsClients\OzonEdu.MerchApi.HttpsClients.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="Models\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Remove="Models\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="Models\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Remove="Models\**" />
     </ItemGroup>
 
 </Project>
